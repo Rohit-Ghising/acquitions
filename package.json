@@ -3,15 +3,25 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "imports": {
+    "#config/*": "./src/config/*",
+    "#controllers/*": "./src/controllers/*",
+    "#middlewares/*": "./src/middlewares/*",
+    "#model/*": "./src/model/*",
+    "#routes/*": "./src/routes/*",
+    "#services/*": "./src/services/*",
+    "#utlis/*": "./src/utlis/*",
+    "#valadations/*": "./src/valadations/*"
+  },
   "scripts": {
     "dev": "node --watch src/index.js ",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "db:generate":"drizzle-kit generate",
-    "db:migrate":"drizzle-kit migrate",
-    "db:srudio":"drizzle-kit studio"
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:srudio": "drizzle-kit studio"
   },
   "keywords": [],
   "author": "",
@@ -19,9 +29,16 @@
   "type": "module",
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "drizzle-orm": "^0.45.1",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.10.1",
+    "winston": "^3.19.0",
+    "zod": "^4.3.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.2",
