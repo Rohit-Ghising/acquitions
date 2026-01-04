@@ -33,3 +33,5 @@
 {"level":"info","message":"User Registered successfully :iuvbug@gmial.com","service":"acquisitions-api"}
 {"level":"info","message":"User iuovbug@gmial.com created Succesfully","service":"acquisitions-api"}
 {"level":"info","message":"User Registered successfully :iuovbug@gmial.com","service":"acquisitions-api"}
+{"level":"info","message":"User iuovbug@gmial.com authenticated successfully","service":"acquisitions-api"}
+{"level":"info","message":"User signed in successfully :iuovbug@gmial.com","service":"acquisitions-api"}
