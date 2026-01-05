@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # For local prod-style testing, use the env file below
+    env_file:
+      - .env.production
+    # In real production, inject env vars via your orchestrator instead of an env file
+    # environment:
+    #   NODE_ENV: production
+    #   DATABASE_URL: ${DATABASE_URL}
+    ports:
+      - "3000:3000"

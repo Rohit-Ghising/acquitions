@@ -35,3 +35,4 @@
 {"level":"info","message":"User Registered successfully :iuovbug@gmial.com","service":"acquisitions-api"}
 {"level":"info","message":"User iuovbug@gmial.com authenticated successfully","service":"acquisitions-api"}
 {"level":"info","message":"User signed in successfully :iuovbug@gmial.com","service":"acquisitions-api"}
+{"ip":"::1","level":"warn","message":"Bot request blocked","path":"/health","service":"acquisitions-api","userAgent":"PostmanRuntime/7.51.0"}

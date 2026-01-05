@@ -1,0 +1,38 @@
+version: "3.9"
+
+services:
+  neon-local:
+    image: neondatabase/neon_local:latest
+    container_name: neon-local
+    ports:
+      - "5432:5432" # optional host access at localhost:5432
+    environment:
+      NEON_API_KEY: ${NEON_API_KEY}
+      NEON_PROJECT_ID: ${NEON_PROJECT_ID}
+      # Use PARENT_BRANCH_ID for ephemeral dev/test branches
+      PARENT_BRANCH_ID: ${PARENT_BRANCH_ID}
+      # Optional: keep branches after container stop
+      # DELETE_BRANCH: "false"
+    # Optional: one persistent branch per Git branch
+    # volumes:
+    #   - ./.neon_local/:/tmp/.neon_local
+    #   - ./.git/HEAD:/tmp/.git/HEAD:ro,consistent
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - neon-local
+    env_file:
+      - .env.development
+    environment:
+      NODE_ENV: development
+      # DATABASE_URL comes from .env.development
+    ports:
+      - "3000:3000"
+    # For hot reload in development, you could use nodemon:
+    # command: ["npm", "run", "dev"]
+    # volumes:
+    #   - .:/usr/src/app
+    #   - /usr/src/app/node_modules
