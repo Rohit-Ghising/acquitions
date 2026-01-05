@@ -36,3 +36,10 @@
 {"level":"info","message":"User iuovbug@gmial.com authenticated successfully","service":"acquisitions-api"}
 {"level":"info","message":"User signed in successfully :iuovbug@gmial.com","service":"acquisitions-api"}
 {"ip":"::1","level":"warn","message":"Bot request blocked","path":"/health","service":"acquisitions-api","userAgent":"PostmanRuntime/7.51.0"}
+{"level":"info","message":"HELLO rom logger","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [05/Jan/2026:16:19:03 +0000] \"GET / HTTP/1.1\" 200 11 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [05/Jan/2026:16:19:05 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting Users","service":"acquisitions-api"}
+{"level":"error","message":"Error getting usrrs,e","service":"acquisitions-api"}
+{"level":"error","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [05/Jan/2026:16:19:21 +0000] \"GET /login HTTP/1.1\" 404 144 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}

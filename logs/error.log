@@ -20,3 +20,5 @@
 {"level":"error","message":"Error cxreating useur","service":"acquisitions-api"}
 {"level":"error","message":"Error cxreating useur","service":"acquisitions-api"}
 {"level":"error","message":"Error cxreating useur","service":"acquisitions-api"}
+{"level":"error","message":"Error getting usrrs,e","service":"acquisitions-api"}
+{"level":"error","service":"acquisitions-api"}
